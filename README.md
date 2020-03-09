@@ -43,6 +43,6 @@ python hdt_sampler.py -f myHDTFile.hdt -s 0.1 -m unweigthed
 ## Related Publication
 ```
 Heling, Lars, Acosta, Maribel. 
-"Estimating Characteristic Sets for RDF Dataset Profilesbased on Sampling." 
+"Estimating Characteristic Sets for RDF Dataset Profiles based on Sampling." 
 European Semantic Web Conference 2020.
 ```
