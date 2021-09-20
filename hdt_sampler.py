@@ -67,7 +67,7 @@ class Sampler(object):
         self.sampling_dataset = HDT_Dataset(**kwargs)
 
         # Compute abs. number of subjects to be sampled
-        self.sample_size = int(math.floor(int(self.sampling_dataset.distinct_subjects) * float(rel_sample)))
+        self.sample_size = max(int(math.floor(int(self.sampling_dataset.distinct_subjects) * float(rel_sample))), 1)
         self.logger.info(f"Sample size: {rel_sample * 100} % of all subject = {self.sample_size} subjects.")
 
     def execute(self):
@@ -87,6 +87,7 @@ class Sampler(object):
             end = dt.datetime.now()
             self.logger.info(
                 f"Sample '{sample_fn}' with {sampling_metadata['sampled_triples']} triples created in {end - start}.")
+
 
 
 if __name__ == '__main__':

@@ -21,7 +21,6 @@ class HDT_Dataset():
             raise e
         self.card = None
 
-
     def __str__(self):
         return str(self.__source)
 
@@ -55,7 +54,7 @@ class HDT_Dataset():
                 (ts, subject_degree) = self.document.search_triples(subject, "", "")
                 # Assume the minimum degree of all subjects = 1
                 min_degree = 1
-                min_probability = min_degree / self.document.nb_subjects  # Minimum probaility of a subject to be chosen
+                min_probability = min_degree / self.document.nb_subjects  # Minimum probability of a subject to be chosen
 
                 # Probability of the current subject to be chosen
                 p = min_probability / (subject_degree / self.document.nb_subjects)

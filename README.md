@@ -39,6 +39,15 @@ python hdt_sampler.py -f myHDTFile.hdt -s 0.1 -m unweigthed
                         Set logging level (optional)
 ```
 
+## Scripts
+
+In the ```scripts``` directory we provide additional scripts:
+- ``compute_CSPF_proto.py``: Prototypical implementation to compute the CSPF for an n-triples file. 
+The script takes the filepath of an N-Triples file as a single argument. 
+  It shuffles the triples, sorts them, and computes the CSPF. It prints the stats of computing the CSPF
+
+
+
 
 ## Related Publication
 ```
