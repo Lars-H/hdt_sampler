@@ -52,6 +52,6 @@ The script takes the filepath of an N-Triples file as a single argument.
 ## Related Publication
 ```
 Heling, Lars, Acosta, Maribel. 
-"Estimating Characteristic Sets for RDF Dataset Profilesbased on Sampling." 
+"Estimating Characteristic Sets for RDF Dataset Profiles based on Sampling." 
 European Semantic Web Conference 2020.
 ```
